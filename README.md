@@ -6,7 +6,6 @@ This is a repository for various AI-related scripts and experiments using the Op
 
 Detailed documentation for the code in this repository can be found in the respective markdown files within each directory.
 
-
 ## Requirements
 
 The project dependencies are listed in the `requirements.txt` file. To install the dependencies, run the following command:
