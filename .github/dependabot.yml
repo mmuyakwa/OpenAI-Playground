@@ -9,3 +9,47 @@ updates:
     directory: "." # Location of package manifests
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    target-branch: "master"
+    reviewers:
+      - "mmuyakwa"
+    assignees:
+      - "mmuyakwa"
+    commit-message:
+      prefix: "pip"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "python"
+    open-pull-requests-limit: 10
+    # Groups related updates together
+    groups:
+      openai-dependencies:
+        patterns:
+          - "openai*"
+      security-updates:
+        patterns:
+          - "*"
+        update-types:
+          - "security"
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    target-branch: "master"
+    reviewers:
+      - "mmuyakwa"
+    assignees:
+      - "mmuyakwa"
+    commit-message:
+      prefix: "github-actions"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    open-pull-requests-limit: 5
