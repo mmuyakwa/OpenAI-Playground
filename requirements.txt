@@ -7,7 +7,7 @@ h11==0.16.0
 httpcore==1.0.9
 httpx==0.28.1
 idna==3.10
-openai==1.108.1
+openai==1.109.1
 pydantic==2.11.9
 pydantic_core==2.39.0
 python-dotenv==1.1.1
